@@ -14,14 +14,10 @@
 # print(5%4)
 
 # Math functions
-print(round(3.1))
-print(round(3.9))
-print(abs(3.1))
-print(abs(-3.1))
-
-
-
-
+# print(round(3.1))
+# print(round(3.9))
+# print(abs(3.1))
+# print(abs(-3.1))
 
 # bool
 # str
@@ -36,4 +32,21 @@ print(abs(-3.1))
 
 None
 
+# operator precedence
 
+# ()
+# **
+# * /
+# + -
+# print((5 + 4) * 10 / 2)
+
+# print(((5 + 4) * 10) / 2)
+
+# print((5 + 4) * (10 / 2))
+
+# print(5 + (4 * 10) / 2)
+
+# print(5 + 4 * 10 // 2)
+
+print(bin(5))
+print(int('0b101', 2))
