@@ -144,3 +144,16 @@ None
 
 # print(amazon_cart)
 
+# Matrix
+# matrix = [
+#   [1,2,5],
+#   [3,4,6],
+#   [9,0,7]
+# ]
+
+# print(matrix[0][1])
+
+bastet = ['a', 'b', 'c', 'd', 'e']
+
+print('a' in bastet)
+
