@@ -19,19 +19,6 @@
 # print(abs(3.1))
 # print(abs(-3.1))
 
-# bool
-# str
-# list
-# tuple
-# set
-# dict
-
-#Classes -> custom types
-
-# Specialized data types
-
-None
-
 # operator precedence
 
 # ()
@@ -48,5 +35,35 @@ None
 
 # print(5 + 4 * 10 // 2)
 
-print(bin(5))
-print(int('0b101', 2))
+# bin data types
+# print(bin(5))
+# print(int('0b101', 2))
+
+
+# bool
+# str
+# list
+# tuple
+# set
+# dict
+
+#Classes -> custom types
+
+# Specialized data types
+
+None
+
+# variables- snake_case 
+# pi = 3.14 #can be changed
+# PI = 3.14 #is a constant and can not be changed
+# multiple assignments
+# a,b,c = 4,2,1
+# print(a, b, c)
+
+# expressions-piece of code that produces a value
+# statements-statement that preforms an action
+
+# augmented assignment operator
+some_value = 5
+some_value += 2
+print(some_value)
