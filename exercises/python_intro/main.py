@@ -325,4 +325,98 @@ None
 # # or
 # print(my_set | your_set)
 
+# Ternary Operator
+
+# condition_if_true if condtion else condition_if_else
+
+# is_friend = False
+
+# can_message = "message allowed" if is_friend else "not allowed to message"
+
+# print(can_message)
+
+# Short Circuiting- when one is true or false and does not check the second condition
+# is_Friend = True
+# is_User = True
+
+# if is_Friend or is_User:
+#   print('best friends forever')
+
+# is_magician = True
+# is_expert = True
+
+# if is_magician and is_expert:
+#   print("you are a master magician")
+# elif is_magician and not is_expert:
+#   print('at least you\'re getting there')
+# else:
+#   print('you need magic powers')
+
+# my_list = [1,2,3,4,5,6,7,8,9,10]
+# counter = 0
+# sum = 0
+# for item in my_list:
+#   sum += item
+#   counter+=1
+
+# print(sum)
+# print(counter)
+
+# for number in range(0,100):
+#   print(number)
+
+# for number in range(0,100,2):
+#   print(number)
+
+# for i,char in enumerate('Hellooo'):
+#   print(i, char)
+
+# want to be told what the index of 50 is
+# for i,char in enumerate(list(range(100))):
+#   if char == 50:
+#     print(i)
+
+# print * when it is a 1 and a empty space when 0
+
+# picture = [
+#   [0,0,0,1,0,0,0],
+#   [0,0,1,1,1,0,0],
+#   [0,1,1,1,1,1,0],
+#   [1,1,1,1,1,1,1],
+#   [0,0,0,1,0,0,0],
+#   [0,0,0,1,0,0,0]
+# ]
+
+# for a_list in picture:
+#   the_picture = ''
+#   for item in a_list:
+#     if item == 0:
+#       the_picture += ' '
+#     else:
+#       the_picture += '*'
+#   print(the_picture)
+# # alternate answer
+# for a_list in picture:
+#   for item in a_list:
+#     if item == 0:
+#       print(' ', end='')
+#     else:
+#       print('*', end='')
+#   print('')
+
+
+# check for duplicates in a list
+
+some_list = [ 'a', 'b', 'c', 'b', 'd', 'm', 'n', 'n']
+second_list = []
+
+
+for item in some_list:
+  if some_list.count(item) > 1:
+    if item not in second_list:
+      second_list.append(item)
+      
+print(second_list)
+
+        
 
