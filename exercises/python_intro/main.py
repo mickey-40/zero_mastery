@@ -842,15 +842,49 @@ None
 # bob_w = Wizard()
 
 
-class SuperList(list):
+# class SuperList(list):
      
-  def __len__(self):
-    return 1000
+#   def __len__(self):
+#     return 1000
 
-super_list1 = SuperList()
+# super_list1 = SuperList()
 
-print(len(super_list1))
-super_list1.append(5)
-print(super_list1)
-super_list1[0]
-print(issubclass(SuperList, list))
+# print(len(super_list1))
+# super_list1.append(5)
+# print(super_list1)
+# super_list1[0]
+# print(issubclass(SuperList, list))
+
+# lambda expressions- no name annoumous functions only used once
+
+# from functools import reduce
+# my_list = [1,2,3]
+
+# def multiply_by2(item):
+#   return item*2
+
+# def only_odd(item):
+#   return item%2 != 0
+
+# print(list(map(lambda item: item*2, my_list)))
+# print(my_list)
+
+# Square exercise
+
+# my_list = [ 5, 4, 3]
+
+# print(list(map(lambda item: item * item, my_list )))
+
+# list sorting
+# a = [(0, 2), (4, 3), (9, 9), (10, -1)]
+
+# a.sort(key=lambda x: x[1])
+
+# print(a)
+
+# list, set, dictionary
+
+my_list = [char for char in 'hello']
+my_list2 = [num for num in range(0, 100)]
+
+print(my_list2)
