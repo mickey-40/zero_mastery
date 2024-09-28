@@ -882,9 +882,43 @@ None
 
 # print(a)
 
-# list, set, dictionary
+# list, set, dictionary Comprehensions
 
-my_list = [char for char in 'hello']
-my_list2 = [num for num in range(0, 100)]
+# format 
+#  my_list = [param for param in iterable]
 
-print(my_list2)
+
+
+# my_list = [char for char in 'hello']
+# this replaces
+# for char in 'hello':
+#   my_list.append(char)
+
+# my_list2 = [num for num in range(0, 100)]
+
+# or
+# for num in range(0, 100):
+#   my_list2.append(num)
+
+# my_list3 = [num**2 for num in range(0,100)]
+
+# my_list4 = [num**2 for num in range(0,100) if num % 2 == 0]
+# sets are the same as list
+# dictionaries are different
+# simple_dict = {
+#   'a': 1,
+#   'b': 2
+# }
+# my_dict = {key:value**2 for key,value in simple_dict.items() }
+
+# my_dict = {num: num*2 for num in [1,2,3]}
+
+# print(my_dict)
+
+# comprehension exercise find the duplicates
+
+some_list = ['a', 'b', 'c', 'b', 'd', 'm', 'n','n']
+
+duplicates = list(set([value for value in some_list if some_list.count(value) > 1 ]))
+
+print(duplicates)
