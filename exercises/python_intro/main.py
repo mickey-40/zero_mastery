@@ -917,8 +917,56 @@ None
 
 # comprehension exercise find the duplicates
 
-some_list = ['a', 'b', 'c', 'b', 'd', 'm', 'n','n']
+# some_list = ['a', 'b', 'c', 'b', 'd', 'm', 'n','n']
 
-duplicates = list(set([value for value in some_list if some_list.count(value) > 1 ]))
+# duplicates = list(set([value for value in some_list if some_list.count(value) > 1 ]))
 
-print(duplicates)
+# print(duplicates)
+
+# decorators - gives functions more features @
+
+# def my_decorator(func):
+#   def wrap_func():
+#     print('********')
+#     func()
+#     print('********')
+#   return wrap_func
+
+# @my_decorator
+# def hello():
+#   print('helloooo')
+
+# hello()
+# with a param
+# def my_decorator(func):
+#   def wrap_func(*args, **kwargs):
+#     print('*******')
+#     func(*args, **kwargs)
+#     print('********')
+#   return wrap_func
+
+# @my_decorator
+# def hello(greeting, emoji):
+#   print(greeting, emoji)
+
+
+# hello('hi', ':)')
+# from time import time
+
+# def performance(fn):
+#   def wrapper(*args, **kwargs):
+#     t1 = time()
+#     result = fn(*args, **kwargs)
+#     t2 = time()
+#     print(f'took {t2-t1} s')
+#     return result
+#   return wrapper
+
+
+# @performance
+# def long_time():
+#   for i in range(100000000):
+#     i*5
+
+# long_time()
+
