@@ -970,3 +970,46 @@ None
 
 # long_time()
 
+# Error Handling
+# while True:
+#   try:
+#     age = int(input('What is your age?'))
+#     print(age)
+#   except:
+#     print('please enter a number')
+#   else:
+#     print('thank you')
+#     break
+
+# def sum(num1, num2):
+#   try:
+#     return num1 + num2
+#   except TypeError as err:
+#     print(err)
+
+# print(sum('1', 2))
+
+# while True:
+#   try:
+#     age = int(input('What is your age?'))
+#     print(age)
+#   except:
+#     print('please enter a number')
+#   else:
+#     print('thank you')
+#     break
+#   finally:
+#     print('ok, i am finally done')
+
+while True:
+  try:
+    age = int(input('What is your age?'))
+    print(age)
+    raise Exception('hey cut it out')
+  except:
+    print('please enter a number')
+  else:
+    print('thank you')
+    break
+  finally:
+    print('ok, i am finally done')
