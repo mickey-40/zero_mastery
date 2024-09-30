@@ -1115,3 +1115,30 @@ None
 #     print(my_file.read())
 
 # pathlib is a module so software works on all systems
+
+# try:
+#   with open('/app/sad.txt', mode='r') as my_file:
+#     print(my_file.read())
+# except FileNotFoundError as err:
+#    print('file does not exist1')
+#    raise err
+# except IOError as err:
+#    print('file does not exist2')
+#    raise err
+# Translates file to spanish
+# from translate import Translator
+
+# try:
+#   with open('text2.txt', mode='r') as my_file:
+#     # print(my_file.readline())
+#     translator = Translator(to_lang="es")
+#     translation = translator.translate(my_file.read())
+#     print(translation)
+#     with open('text-spanish.txt', mode='w') as spanish_file:
+#        spanish_file.write(translation)
+# except FileNotFoundError as err:
+#    print('file does not exist1')
+#    raise err
+# except IOError as err:
+#    print('file does not exist2')
+#    raise err
