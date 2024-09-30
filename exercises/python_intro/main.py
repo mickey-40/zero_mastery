@@ -1001,15 +1001,99 @@ None
 #   finally:
 #     print('ok, i am finally done')
 
-while True:
-  try:
-    age = int(input('What is your age?'))
-    print(age)
-    raise Exception('hey cut it out')
-  except:
-    print('please enter a number')
-  else:
-    print('thank you')
-    break
-  finally:
-    print('ok, i am finally done')
+# while True:
+#   try:
+#     age = int(input('What is your age?'))
+#     print(age)
+#     raise Exception('hey cut it out')
+#   except:
+#     print('please enter a number')
+#   else:
+#     print('thank you')
+#     break
+#   finally:
+#     print('ok, i am finally done')
+
+# Generator
+# def generator_function(num):
+#   for i in range(num):
+#     yield i*2
+
+# for item in generator_function(1000):
+#   print(item)
+# g = generator_function(100)
+
+# print(next(g))
+# print(next(g))
+# print(next(g))
+
+# def special_for(iterable):
+#   iterator = iter(iterable)
+#   while True:
+#     try:
+#       iterator*5
+#       next(iterator)
+#     except StopIteration:
+#       break
+
+
+# class MyGen:
+#   current = 0
+#   def __init__(self, first, last):
+#     self.first = first
+#     self.last = last
+#     MyGen.current = self.first #this line allows us to use the current number as the starting point for the iteration
+
+#   def __iter__(self):
+#     return self
+
+#   def __next__(self):
+#     if MyGen.current < self.last:
+#       num = MyGen.current
+#       MyGen.current += 1
+#       return num
+#     raise StopIteration
+
+# gen = MyGen(1,100)
+# for i in gen:
+#     print(i)
+
+# Fibonacci Numbers
+
+# my solution (works)
+# def generator_function(num0):
+#   num1 = 0
+#   num2 = 0
+  
+#   for i in range(num0):
+#     if i == 0 :
+#       num1 = i
+#       yield i
+#     elif i == 1:
+#       num2 = i
+#       yield i
+#     elif i % 2 == 0:
+#       num1 += num2
+#       yield num1 
+#     else:
+#       num2 += num1
+#       yield num2 
+    
+          
+
+# for item in generator_function(20) :
+#   print(item)
+
+# the solution
+# def fib(number):
+#   a = 0
+#   b = 1
+#   for i in range(number):
+#     yield a
+#     temp = a 
+#     a = b
+#     b = temp + b
+
+# g = fib(10)
+# for item in g:
+#   print(item)
