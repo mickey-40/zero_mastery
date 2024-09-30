@@ -1097,3 +1097,21 @@ None
 # g = fib(10)
 # for item in g:
 #   print(item)
+
+# File paths
+# my_file = open('test.txt', mode='r+')
+#
+# print(my_file.readlines())
+#
+# my_file.close()
+
+# don't have to close
+# with open('sad.txt', mode='r') as my_file:
+#     text = my_file.write(':(')
+#     print(text)
+
+#
+# with open('app/sad.txt', mode='r') as my_file:
+#     print(my_file.read())
+
+# pathlib is a module so software works on all systems
